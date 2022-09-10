@@ -1,6 +1,8 @@
 package com.example.myapplication
 
 import android.annotation.SuppressLint
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,6 +27,10 @@ class Next : AppCompatActivity() {
             }else{
                 show.text = string
             }
+        })
+        show.setOnClickListener(View.OnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://about.me/gaddarkumar"))
+            startActivity(intent)
         })
 
     }
