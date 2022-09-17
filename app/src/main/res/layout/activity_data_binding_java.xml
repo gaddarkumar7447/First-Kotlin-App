@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        tools:context=".DataBindingJAVA">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/javaEditText"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:hint="Enter the number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/javaEditText"
+            android:id="@+id/javaTextView"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:hint="show text here"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/javaTextView"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:text="Button"
+            android:id="@+id/javaButton"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</layout>

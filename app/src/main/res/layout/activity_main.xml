@@ -14,4 +14,13 @@
         android:layout_centerInParent="true"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/buttonPanel"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Java class"
+        android:id="@+id/javaButton"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>

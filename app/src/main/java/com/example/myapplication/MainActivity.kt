@@ -22,7 +22,9 @@ class MainActivity : AppCompatActivity() {
             myToast.show()
         })
 
-
+        findViewById<Button>(R.id.javaButton).setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this, DataBindingJAVA ::class.java))
+        })
 
     }
 }

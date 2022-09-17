@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.ActivityBindingClassBinding
 
 class BindingClass : AppCompatActivity() {
+
     private lateinit var bindingClass : ActivityBindingClassBinding
 
     /*private lateinit var viewModel : BindingModelClass*/

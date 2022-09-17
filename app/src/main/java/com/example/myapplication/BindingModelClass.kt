@@ -5,11 +5,11 @@ import androidx.lifecycle.ViewModel
 class BindingModelClass : ViewModel() {
     var count = 0
 
-    fun getCurrentCount() : Int{
+    fun getCurrentCount(): Int {
         return count
     }
 
-    fun updateCount() : Int{
+    fun updateCount(): Int {
         return count++
     }
 
