@@ -22,26 +22,50 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_below="@+id/javaEditText"
             android:id="@+id/javaTextView"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/javaEditText"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@color/white"
+            android:hint="show text here"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/javaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/javaTextView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/javaButton"
+            android:layout_marginTop="20dp"
             android:layout_margin="20dp"
             android:padding="20dp"
-            android:hint="show text here"
+            android:id="@+id/showIncremetValue"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="Show here increment value"
+            android:textColorHint="@color/black"
             android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/javaIncrementButton"
             android:layout_width="wrap_content"
-            android:layout_below="@+id/javaTextView"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showIncremetValue"
             android:layout_centerInParent="true"
-            android:text="Button"
-            android:id="@+id/javaButton"
-            android:layout_height="wrap_content"/>
-
+            android:layout_marginTop="20dp"
+            android:text="Incremet button" />
     </RelativeLayout>
 
 </layout>

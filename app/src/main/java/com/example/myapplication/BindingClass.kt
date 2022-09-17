@@ -15,6 +15,7 @@ class BindingClass : AppCompatActivity() {
     /*private lateinit var viewModel : BindingModelClass*/
 
     private lateinit var viewClass: ModelViewClass
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingClass = DataBindingUtil.setContentView(this, R.layout.activity_binding_class)
