@@ -11,21 +11,29 @@ import com.example.myapplication.databinding.ActivityBindingClassBinding
 class BindingClass : AppCompatActivity() {
     private lateinit var bindingClass : ActivityBindingClassBinding
 
-    private lateinit var viewModel : BindingModelClass
+    /*private lateinit var viewModel : BindingModelClass*/
 
+    private lateinit var viewClass: ModelViewClass
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingClass = DataBindingUtil.setContentView(this, R.layout.activity_binding_class)
 
-        viewModel = ViewModelProvider(this).get(BindingModelClass::class.java)
+        viewClass = ViewModelProvider(this).get(ModelViewClass ::class.java)
 
-        bindingClass.showText.text = viewModel.getCurrentCount().toString()
-
+        bindingClass.showText.text = viewClass.current.toString()
         bindingClass.increment.setOnClickListener(View.OnClickListener {
+            bindingClass.showText.text = viewClass.increment.toString()
+        })
 
+
+        /*viewModel = ViewModelProvider(this).get(BindingModelClass::class.java)
+        bindingClass.showText.text = viewModel.getCurrentCount().toString()
+        bindingClass.increment.setOnClickListener(View.OnClickListener {
             bindingClass.showText.text = viewModel.updateCount().toString()
 
-        })
+        })*/
+
+
 
         /*bindingClass.buttonSubmit.setOnClickListener(View.OnClickListener {
             showData()
