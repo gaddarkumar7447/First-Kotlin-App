@@ -23,7 +23,8 @@ public class DataBindingJAVA extends AppCompatActivity {
         setContentView(R.layout.activity_data_binding_java);
         dataBindingJAVA = DataBindingUtil.setContentView(DataBindingJAVA.this,R.layout.activity_data_binding_java);
 
-         modelViewJavaClass = new ViewModelProvider(DataBindingJAVA.this).get(ModelViewJavaClass.class);
+         /*modelViewJavaClass = new ViewModelProvider(DataBindingJAVA.this).get(ModelViewJavaClass.class);*/
+        modelViewJavaClass = new ViewModelProvider(DataBindingJAVA.this).get(ModelViewJavaClass.class);
 
         dataBindingJAVA.javaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +45,7 @@ public class DataBindingJAVA extends AppCompatActivity {
         dataBindingJAVA.javaIncrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dataBindingJAVA.showIncremetValue.setText("Hello gaddar");
+                dataBindingJAVA.showIncremetValue.setText("777");
             }
         });
     }

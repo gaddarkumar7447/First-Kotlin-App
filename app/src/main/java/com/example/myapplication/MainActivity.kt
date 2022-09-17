@@ -26,5 +26,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, DataBindingJAVA ::class.java))
         })
 
+        findViewById<Button>(R.id.modelViewFactory).setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this, ModelViewFactory ::class.java))
+        })
+
     }
 }

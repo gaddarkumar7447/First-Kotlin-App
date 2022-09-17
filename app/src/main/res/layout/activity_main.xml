@@ -23,4 +23,13 @@
         android:id="@+id/javaButton"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/javaButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Model View factory"
+        android:id="@+id/modelViewFactory"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>
